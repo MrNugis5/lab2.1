@@ -8,9 +8,9 @@ class CodeBuilder:
         return self  # võimaldab chaining
 
     def __str__(self):
-        lines = [f'class {self.class_name}:', '', '    def __init__(self):']
+        lines = [f'class {self.class_name}:', '', '  def __init__(self):']
         for name, age in self.fields:
-            lines.append(f'        self.{name} = {age}')
+            lines.append(f'    self.{name} = {age}')
         return '\n'.join(lines)
 
 
