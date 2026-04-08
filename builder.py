@@ -13,14 +13,5 @@ class CodeBuilder:
             lines.append(f'    self.{name} = {age}')
         return '\n'.join(lines)
 
-
-        
-
-    
-
-
-
-
-
 cb = CodeBuilder('Person').add_field('name', '""') .add_field('age', '0')
 print(cb) 
